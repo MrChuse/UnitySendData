@@ -37,7 +37,7 @@ public class Client : MonoBehaviour
         stream.Write(want_to_send, 0, want_to_send.Length);
         // send true to indicate that you want to send data
         // and server won't close the connection
-        SendList(new int[]{(int)(transform.position.x), (int)(transform.position.y)});
+        SendList(new int[]{Time.frameCount});
         
     }
     
