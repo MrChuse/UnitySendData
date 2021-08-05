@@ -69,7 +69,7 @@ class Server:
         print('Connection', num, ':', list_size, 'bytes to receive')
         
         list_bytes = self.receive(conn, list_size, CHUNK)
-        print('Connection', num, ':', 'received data', list_bytes)
+        print('Connection', num, ':', 'received data')#, list_bytes)
         
         
         values = struct.unpack(str(list_size//4) + 'i', list_bytes)
